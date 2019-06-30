@@ -8,7 +8,8 @@ VOLUME ["/data"]
 
 WORKDIR "/data"
 
-ENTRYPOINT ["youtube-dl", "--extract-audio", "--no-call-home", "--ignore-errors", "--no-playlist", "--audio-format", "mp3"]
+ENTRYPOINT ["youtube-dl", "--extract-audio", "--no-call-home", "--ignore-errors", "--yes-playlist", "--audio-format", "mp3"]
+#  --no-playlist
 
 CMD []
 
